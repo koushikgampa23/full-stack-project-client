@@ -1,0 +1,20 @@
+.navBar {
+  background-color: brown;
+  padding: 20px;
+  color: white;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.logout {
+  border-radius: 10px;
+  padding: 8px;
+  margin-left: 5px;
+  border: 0px;
+}

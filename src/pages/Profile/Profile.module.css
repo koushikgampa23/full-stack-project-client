@@ -1,0 +1,99 @@
+.layout {
+  display: grid;
+  justify-content: center;
+}
+
+.title {
+  background-color: rgb(95, 95, 210);
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.postTitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  width: 200px;
+}
+
+.userName {
+  padding: 10px;
+  font-style: italic;
+  color: white;
+  background-color: rgb(13, 108, 76);
+  width: 200px;
+  margin: 5px;
+}
+
+.mainContainer {
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.container {
+  margin: 20px;
+  border: 2px solid blue;
+}
+
+.linkStyle {
+  color: white;
+  padding: 5px;
+}
+
+.alignContent {
+  display: flex;
+  align-items: center;
+}
+
+.iconStyle {
+  font-size: 24px;
+  margin-right: 3px;
+}
+
+.subIcon {
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  font-weight: 600;
+  color: #4d4d4d;
+  font-size: 22px;
+}
+
+.profileContainer {
+  display: grid;
+  padding: 20px;
+  gap: 8px;
+  margin-bottom: 20px;
+  border: 2px solid brown;
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.buttonStyle {
+  border-radius: 10px;
+  border: 0px;
+  padding: 12px;
+  color: white;
+  margin-top: 10px;
+  background-color: brown;
+}
+
+.buttonAlign {
+  text-align: center;
+}
+
+.alignContent {
+  display: flex;
+  align-items: center;
+}

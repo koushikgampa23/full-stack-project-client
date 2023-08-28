@@ -1,0 +1,57 @@
+.layout {
+  display: grid;
+  justify-content: center;
+}
+
+.title {
+  background-color: rgb(95, 95, 210);
+  padding: 10px;
+  color: white;
+  width: 200px;
+  font-weight: 600;
+}
+
+.postTitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.mainContainer {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  margin: 20px;
+  border: 2px solid rgb(95, 95, 210);
+  width: 220px;
+  height: 100%;
+}
+
+.linkStyle {
+  color: white;
+  padding: 5px;
+}
+
+.alignContent {
+  display: flex;
+  align-items: center;
+}
+
+.iconStyle {
+  font-size: 24px;
+  margin-right: 3px;
+}
+
+.subIcon {
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+}
