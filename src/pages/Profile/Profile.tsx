@@ -14,7 +14,7 @@ const Profile = () => {
   const navigate = useNavigate();
   React.useEffect(() => {
     axios
-      .get("http://localhost:3001/profile", {
+      .get("https://social-media-platform-486a5fef86e6.herokuapp.com/profile", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },

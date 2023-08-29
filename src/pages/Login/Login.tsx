@@ -16,7 +16,7 @@ export const Login = () => {
   const navigate = useNavigate();
   const submit = (data: LoginType) => {
     axios
-      .post("http://localhost:3001/auth/login", data)
+      .post("https://social-media-platform-486a5fef86e6.herokuapp.com/auth/login", data)
       .then((response) => {
         if (response.data.error) {
           alert(response.data.error);

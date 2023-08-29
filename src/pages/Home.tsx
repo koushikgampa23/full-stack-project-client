@@ -16,7 +16,7 @@ const Home = () => {
   const navigate = useNavigate();
   React.useEffect(() => {
     axios
-      .get("http://localhost:3001/posts", {
+      .get("https://social-media-platform-486a5fef86e6.herokuapp.com/posts", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },
@@ -35,7 +35,7 @@ const Home = () => {
     setIcon(!icon);
     axios
       .post(
-        "http://localhost:3001/likes",
+        "https://social-media-platform-486a5fef86e6.herokuapp.com/likes",
         { PostId: id },
         {
           headers: {

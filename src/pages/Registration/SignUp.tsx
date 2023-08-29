@@ -9,7 +9,7 @@ import { PiUserCirclePlusFill } from "react-icons/pi";
 const CreateReg = () => {
   const [msg, setMsg] = React.useState("");
   const submit = (values: SignUpType) => {
-    axios.post("http://localhost:3001/auth", values).then((response) => {
+    axios.post("https://social-media-platform-486a5fef86e6.herokuapp.com/auth", values).then((response) => {
       setMsg(response.data);
     });
   };

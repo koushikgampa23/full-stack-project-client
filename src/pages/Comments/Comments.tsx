@@ -18,7 +18,7 @@ export const Comments = (postId: Props) => {
   const { authState } = useContext<any>(AuthContext);
   React.useEffect(() => {
     axios
-      .get(`http://localhost:3001/comments/${postId.postId}`)
+      .get(`https://social-media-platform-486a5fef86e6.herokuapp.com/comments/${postId.postId}`)
       .then((response) => {
         setCommentsArr(response.data);
       });
@@ -26,7 +26,7 @@ export const Comments = (postId: Props) => {
 
   const deleteComment = (id: string) => {
     axios
-      .delete(`http://localhost:3001/comments/${id}`, {
+      .delete(`https://social-media-platform-486a5fef86e6.herokuapp.com/comments/${id}`, {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },
@@ -67,7 +67,7 @@ export const Comments = (postId: Props) => {
   const submitPost = () => {
     axios
       .post(
-        "http://localhost:3001/comments/",
+        "https://social-media-platform-486a5fef86e6.herokuapp.com/comments/",
         {
           commentBody: comment,
           PostId: postId.postId,

@@ -17,7 +17,7 @@ const CreatePost = () => {
 
   const handleSubmit = (data: object) => {
     axios
-      .post("http://localhost:3001/posts", data, {
+      .post("https://social-media-platform-486a5fef86e6.herokuapp.com/posts", data, {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },

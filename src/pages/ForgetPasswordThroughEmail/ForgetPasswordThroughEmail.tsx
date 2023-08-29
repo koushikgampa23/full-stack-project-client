@@ -9,7 +9,7 @@ const ForgetPasswordThroughEmail = () => {
   const [msg, setMsg] = React.useState("");
   const handleForgetPassword = () => {
     axios
-      .get(`http://localhost:3001/forgetpasswordemail/${username}`)
+      .get(`https://social-media-platform-486a5fef86e6.herokuapp.com/forgetpasswordemail/${username}`)
       .then((res) => {
         setMsg(res.data);
       });

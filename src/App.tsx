@@ -24,7 +24,7 @@ function App() {
 
   React.useEffect(() => {
     axios
-      .get("http://localhost:3001/auth/auth", {
+      .get("https://social-media-platform-486a5fef86e6.herokuapp.com/auth/auth", {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },

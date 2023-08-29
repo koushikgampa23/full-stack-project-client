@@ -13,7 +13,7 @@ const ForgetPassword = () => {
 
   const handleForgetPassword = () => {
     axios
-      .post("http://localhost:3001/forgetpassword", {
+      .post("https://social-media-platform-486a5fef86e6.herokuapp.com/forgetpassword", {
         username: username,
         securityQuestion: securityPassword,
         newPassword: password,

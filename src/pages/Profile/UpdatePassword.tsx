@@ -14,7 +14,7 @@ const UpdatePassword = () => {
   };
   const handleSubmit = (data: object) => {
     axios
-      .put("http://localhost:3001/profile/updatepassword", data, {
+      .put("https://social-media-platform-486a5fef86e6.herokuapp.com/profile/updatepassword", data, {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },

@@ -11,7 +11,7 @@ const UserProfile = () => {
   const [posts, setPosts] = React.useState<postType[]>();
   React.useEffect(() => {
     axios
-      .get(`http://localhost:3001/posts/individualuserposts/${id}`)
+      .get(`https://social-media-platform-486a5fef86e6.herokuapp.com/posts/individualuserposts/${id}`)
       .then((res) => {
         setPosts(res.data);
       });

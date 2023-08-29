@@ -20,14 +20,14 @@ export const Post = () => {
 
   const navigate = useNavigate();
   React.useEffect(() => {
-    axios.get(`http://localhost:3001/posts/byid/${id}`).then((response) => {
+    axios.get(`https://social-media-platform-486a5fef86e6.herokuapp.com/posts/byid/${id}`).then((response) => {
       setPost(response.data);
     });
   }, [id]);
 
   const deletePost = () => {
     axios
-      .delete(`http://localhost:3001/posts/${id}`, {
+      .delete(`https://social-media-platform-486a5fef86e6.herokuapp.com/posts/${id}`, {
         headers: {
           accessToken: localStorage.getItem("accessToken"),
         },
@@ -48,7 +48,7 @@ export const Post = () => {
   const handleEdit = () => {
     axios
       .put(
-        "http://localhost:3001/posts/postTitle",
+        "https://social-media-platform-486a5fef86e6.herokuapp.com/posts/postTitle",
         { newTitle: newTitle, id: id },
         {
           headers: {
@@ -67,7 +67,7 @@ export const Post = () => {
   const handleEditText = () => {
     axios
       .put(
-        "http://localhost:3001/posts/postText",
+        "https://social-media-platform-486a5fef86e6.herokuapp.com/posts/postText",
         { newText: newText, id: id },
         {
           headers: {
