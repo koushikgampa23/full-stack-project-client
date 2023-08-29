@@ -16,29 +16,43 @@ const UserProfile = () => {
         setPosts(res.data);
       });
   }, [id]);
-  const content = posts?.map((post, index) => {
-    return (
-      <div key={index} className={classes.layout}>
-        <div className={classes.profileContainer}>
-          <span className={classes.heading}>
-            {`Welcome ${post.username}!,`}
-            <br />
-            Below are your Posts
-          </span>
-        </div>
-        <div className={classes.container}>
-          <div className={classes.subContainer}>
-            <div className={classnames(classes.title, classes.alignContent)}>
-              <FaLocationDot className={classes.subIcon} />
-              {post.title}
+  const content = posts
+    ? posts.map((post, index) => {
+        return (
+          <div key={index}>
+            <div className={classes.container}>
+              <div className={classes.subContainer}>
+                <div
+                  className={classnames(classes.title, classes.alignContent)}
+                >
+                  <FaLocationDot className={classes.subIcon} />
+                  {post.title}
+                </div>
+                <div className={classes.postTitle}>{post.postTitle}</div>
+              </div>
             </div>
-            <div className={classes.postTitle}>{post.postTitle}</div>
           </div>
+        );
+      })
+    : "";
+  return (
+    <>
+      {posts === undefined ? (
+        "No Post Avaliable"
+      ) : (
+        <div className={classes.layout}>
+          <div className={classes.profileContainer}>
+            <span className={classes.heading}>
+              {`Welcome ${posts[0].username}!,`}
+              <br />
+              Below are your Posts
+            </span>
+          </div>
+          {content}
         </div>
-      </div>
-    );
-  });
-  return <>{posts?.length === 0 ? "No Post Avaliable" : content}</>;
+      )}
+    </>
+  );
 };
 
 export default UserProfile;

@@ -9,10 +9,10 @@ const PageNotFound = () => {
         <div className={classes.iconContainer}>
           <BiSolidError className={classes.iconStyle} />
           <span className={classes.heading}>Page Not Found</span>
-          <span>
-            Go to the home page: <Link to="/">Home</Link>
-          </span>
         </div>
+        <span>
+          Kindly, Go to the home page: <Link to="/"> Home</Link>
+        </span>
       </div>
     </div>
   );

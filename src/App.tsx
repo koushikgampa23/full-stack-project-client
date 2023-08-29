@@ -14,6 +14,7 @@ import UpdatePassword from "./pages/Profile/UpdatePassword";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 import ForgetPasswordThroughEmail from "./pages/ForgetPasswordThroughEmail/ForgetPasswordThroughEmail";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import NoPostsYet from "./pages/NoPostsPages/NoPostsYet";
 
 function App() {
   const [authState, setAuthState] = React.useState({
@@ -93,6 +94,7 @@ function App() {
               path="/forgetpasswordemail"
               element={<ForgetPasswordThroughEmail />}
             />
+            <Route path="/nopost" element={<NoPostsYet />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </AuthContext.Provider>

@@ -24,11 +24,24 @@
 .iconStyle {
   font-size: 80px;
   color: brown;
-  margin-left: 35px;
+  margin-left: 50px;
+}
+
+.iconStyle2 {
+  font-size: 80px;
+  color: brown;
+  margin-left: 20px;
 }
 
 .iconContainer {
-  display: grid;
-  justify-content: center;   
+  display: flex;
+  align-items: center;
   gap: 3px;
+}
+
+.iconContainer2 {
+  display: grid;
+  justify-content: center;
+  gap: 3px;
+  justify-content: center;
 }
